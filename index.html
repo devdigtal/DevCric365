@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCric365 - Fastest Cricket Updates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding-bottom: 60px;
+        }
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 18px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            border-bottom: 2px solid #00ffcc;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ffcc;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .logo span {
+            color: #ffcc00;
+        }
+        .live-badge {
+            background-color: #ff0055;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px;
+            animation: blinker 1.5s infinite;
+        }
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .promo-card {
+            background: linear-gradient(145deg, #1e2a38, #131c26);
+            border: 2px solid #00ffcc;
+            border-radius: 16px;
+            padding: 40px 25px;
+            box-shadow: 0 10px 30px rgba(0, 255, 204, 0.15);
+            margin-bottom: 30px;
+        }
+        .promo-card h1 {
+            font-size: 28px;
+            color: #ffcc00;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+        .promo-card p {
+            font-size: 16px;
+            color: #cccccc;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        /* Main Website Button */
+        .main-btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 25px auto;
+            background: linear-gradient(135deg, #00ffcc, #008b76);
+            color: #121212;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(0, 255, 204, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        
+        /* Buttons Layout Row */
+        .btn-row {
+            display: flex;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .social-btn {
+            flex: 1;
+            padding: 14px 15px;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .whatsapp-btn {
+            background-color: #25d366;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        /* Premium Blinking Telegram Button */
+        .telegram-btn {
+            background-color: #0088cc;
+            box-shadow: 0 4px 20px rgba(0, 136, 204, 0.6);
+            animation: buttonBlink 1.2s infinite ease-in-out;
+            border: 2px solid #ffffff;
+        }
 
+        /* Continuous Blink Animations */
+        @keyframes blinker {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+        @keyframes buttonBlink {
+            0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4); }
+            50% { transform: scale(1
