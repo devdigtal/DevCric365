@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCric365 - Fastest Cricket Live Line</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding-bottom: 60px;
+        }
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            border-bottom: 2px solid #00ffcc;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ffcc;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .logo span {
+            color: #ffcc00;
+        }
+        .live-badge {
+            background-color: #ff0055;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px;
+            animation: blink 1.5s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #ffcc00;
+            border-left: 4px solid #00ffcc;
+            padding-left: 10px;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+        
+        /* Fixed Widget Frame Layout */
+        .widget-container {
+            width: 100%;
+            background: #1e1e1e;
+            border: 2px solid #00ffcc;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 255, 204, 0.2);
+            margin-bottom: 35px;
+        }
+        .widget-header {
+            background: #1a1a1a;
+            padding: 12px 15px;
+            font-size: 13px;
+            color: #ffaa00;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+        }
+        .live-tag {
+            background-color: #ff0055;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            background: #1e1e1e;
+        }
 
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .box-panel {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .box-panel h3 {
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #2d2d2d;
+            padding-bottom: 8px;
+        }
+        .box-panel p {
+            font-size: 14px;
+            color: #bbb;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">DevCric<span>365</span></div>
+        <div class="live-badge">🔴 FASTEST LIVE LINE</div>
+    </header>
+
+    <div class="container">
+        <h2>Live Scoreboard</h2>
+        
+        <div class="widget-container">
+            <div class="widget-header">
+                <span>🏏 REAL-TIME MATCH MATCH CENTER</span>
+                <span class="live-tag">AUTO-UPDATE ACTIVE</span>
+            </div>
+            <iframe src="https://cricket.champagnat.org/index.html"></iframe>
+        </div>
+
+        <div class="details-grid">
+            <div class="box-panel">
+                <h3>Match Live Analysis</h3>
+                <p>Live current data metrics and session values update automatically inside the secure score panel above without any lags or network drops.</p>
+            </div>
+            <div class="box-panel">
+                <h3>Live Line Delivery</h3>
+                <p>Supersonic live line delivery is fully secured. Keep tracking live balls and session counts continuously.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
