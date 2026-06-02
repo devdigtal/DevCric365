@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCric365 - Live Updates</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background-color: #121212; color: #fff; padding-bottom: 50px; }
+        .container { max-width: 850px; margin: 0 auto; padding: 20px; }
+        
+        /* Slider Styling */
+        .slider-container { width: 100%; overflow: hidden; border-radius: 12px; border: 2px solid #00ffcc; margin: 30px 0; }
+        .slider { display: flex; animation: slide 15s infinite linear; }
+        .slider img { width: 100%; flex-shrink: 0; object-fit: cover; }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
 
+    <div class="container">
+        <h1>Live Cricket Posters</h1>
+
+        <div class="slider-container">
+            <div class="slider">
+                <img src="poster1.jpg" alt="Poster 1">
+                <img src="poster2.jpg" alt="Poster 2">
+                <img src="poster3.jpg" alt="Poster 3">
+                <img src="poster4.jpg" alt="Poster 4">
+            </div>
+        </div>
+        
+        <p style="text-align:center; color:#aaa;">Posters automatically scroll...</p>
+    </div>
+
+</body>
+</html>
