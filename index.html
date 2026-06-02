@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCric365 - Fastest Cricket Live Line</title>
+    <style>
+        /* Premium Sports UI Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding-bottom: 50px;
+        }
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            border-bottom: 2px solid #00ffcc;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ffcc;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .logo span {
+            color: #ffcc00;
+        }
+        .live-badge {
+            background-color: #ff0055;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px;
+            animation: blink 1.5s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+        .container {
+            max-width: 1250px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        .section-title {
+            margin-bottom: 20px;
+            color: #ffcc00;
+            border-left: 4px solid #00ffcc;
+            padding-left: 10px;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        /* Live Match Main Box */
+        .live-hero-card {
+            background: linear-gradient(145deg, #1f2d3d, #141f29);
+            border: 2px solid #ff0055;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 25px rgba(255, 0, 85, 0.15);
+        }
+        .live-hero-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #ffaa00;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #2a3b4c;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+        .live-indicator {
+            background-color: #ff0055;
+            padding: 2px 8px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .match-main-row {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .team-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .team-name-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .team-flag {
+            font-size: 24px;
+        }
+        .team-score-box {
+            font-size: 22px;
+            font-weight: 800;
+            color: #00ffcc;
+        }
+        .live-info-status {
+            background-color: #1a1a1a;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 20px;
+            color: #ffcc00;
+            font-size: 15px;
+            font-weight: 600;
+            border-left: 3px solid #ffcc00;
+        }
+        /* Grid Layout for News and Schedules */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .card-box {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            border: 1px solid #333;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .card-box h3 {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #2d2d2d;
+            padding-bottom: 8px;
+        }
+        .card-box p {
+            font-size: 14px;
+            color: #aaa;
+            line-height: 1.5;
+        }
+        .schedule-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            padding: 8px 0;
+            border-bottom: 1px dashed #2d2d2d;
+        }
+        .schedule-row:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
 
+    <!-- Header Section -->
+    <header>
+        <div class="logo">DevCric<span>365</span></div>
+        <div class="live-badge">🔴 FASTEST LIVE LINE</div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Live Scoreboard Box -->
+        <div class="section-title">Match Center (Live)</div>
+        <div class="live-hero-card">
+            <div class="live-hero-header">
+                <div>🏏 International Women T20 Series</div>
+                <div class="live-indicator">LIVE LINE</div>
+            </div>
+            <div class="match-main-row">
+                <div class="team-row">
+                    <div class="team-name-box">
+                        <span class="team-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span> England Women
+                    </div>
+                    <div class="team-score-box" style="color: #888;">Yet to Bat</div>
+                </div>
+                <div class="team-row">
+                    <div class="team-name-box">
+                        <span class="team-flag">🇮🇳</span> India Women
+                    </div>
+                    <div class="team-score-box">176/5 <span style="font-size: 14px; color: #aaa;">(19.4 Ov)</span></div>
+                </div>
+            </div>
+            <div class="live-info-status">
+                📊 Current Run Rate: 8.95 | England Women won the toss & elected to bowl first.
+            </div>
+        </div>
+
+        <!-- News & Schedule Grid -->
+        <div class="grid-layout">
+            
+            <!-- Schedule Box -->
+            <div class="card-box">
+                <h3>Upcoming Line Schedule</h3>
+                <div class="schedule-row">
+                    <span>Australia vs Pakistan (T20)</span>
+                    <b style="color: #ffaa00;">Today 07:30 PM</b>
+                </div>
+                <div class="schedule-row">
+                    <span>West Indies vs South Africa</span>
+                    <b style="color: #ffaa00;">Tomorrow 08:00 PM</b>
+                </div>
+                <div class="schedule-row">
+                    <span>Mumbai vs Chennai (T20)</span>
+                    <b style="color: #ffaa00;">Line Ready</b>
+                </div>
+            </div>
+
+            <!-- News Box 1 -->
+            <div class="card-box">
+                <h3>IND W vs ENG W Live Analysis</h3>
+                <p>India Women setup an explosive batting display in the death overs, pushing scoring metrics above 8.95 runs per over comfortably with solid boundaries.</p>
+            </div>
+
+            <!-- News Box 2 -->
+            <div class="card-box">
+                <h3>Pitch & Outfield Conditions</h3>
+                <p>Ground experts suggest high dew probability for evening games, making the chase crucial for captains winning the toss tonight.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
